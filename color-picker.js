@@ -19,7 +19,7 @@ const createSlider = function createSlider(color, initialValue, callback) {
 
   // create a div to hold the color name and add it to the slider
   const label = document.createElement('div');
-  label.className = `color-label`;
+  label.className = "color-label";
   label.innerHTML = `${color}:`;
   slider.appendChild(label);
 
@@ -40,7 +40,7 @@ const createSlider = function createSlider(color, initialValue, callback) {
   // set the range input's oninput function to update the readout and call the callback
   range.oninput = () => {
     readout.innerHTML = range.value;
-    callback({ [color]:parseInt(range.value, 10) });
+    callback({ [color]: parseInt(range.value, 10) });
   };
 
   // return the slider
