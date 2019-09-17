@@ -19,7 +19,7 @@ const createSlider = function createSlider(color, initialValue, callback) {
 
   // create a div to hold the color name and add it to the slider
   const label = document.createElement('div');
-  label.className = "color-label";
+  label.className = 'color-label';
   label.innerHTML = `${color}:`;
   slider.appendChild(label);
 
@@ -88,7 +88,7 @@ const createColorPicker = function createColorPicker(initialValue, callback) { /
   };
 
   // add sliders for each color channel
-  Object.keys(currentColor).forEach((color) =>  {
+  Object.keys(currentColor).forEach((color) => {
     const slider = createSlider(color, currentColor[color], update);
     picker.appendChild(slider);
   });
