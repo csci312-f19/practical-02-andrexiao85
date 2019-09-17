@@ -7,7 +7,7 @@
     "test": "jest",
     "lint": "eslint ."
   },
-  "author": "",
+  "author": "Andre Xiao",
   "contributors": [
     "Christopher Andrews <candrews@middlebury.edu>",
     "Michael Linderman <mlinderman@middlebury.edu>"
